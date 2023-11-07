@@ -1,0 +1,124 @@
+{
+  "wines": [
+    {
+      "id": 1,
+      "name": "Chateau Montelena",
+      "year": 2018,
+      "region": "California",
+      "variety": "Cabernet Sauvignon",
+      "rating": 9.5,
+      "similar_wines": [2, 3],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-16.jpg"
+    },
+    {
+      "id": 2,
+      "name": "La Mission",
+      "year": 2019,
+      "region": "Napa Valley",
+      "variety": "Pinot Noir",
+      "rating": 8.8,
+      "similar_wines": [1, 3],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-3.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Cayuse",
+      "year": 2020,
+      "region": "Oregon",
+      "variety": "Sauvignon Blanc",
+      "rating": 9.2,
+      "similar_wines": [1, 2],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-18.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Chateau Beau Sejour",
+      "year": 2017,
+      "region": "Bordeaux",
+      "variety": "Merlot",
+      "rating": 9.1,
+      "similar_wines": [5, 6],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-5.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Chateau Lafite Rothne",
+      "year": 2016,
+      "region": "Bordeaux",
+      "variety": "Cabernet Sauvignon",
+      "rating": 9.7,
+      "similar_wines": [4, 6],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-14.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Chateau Latour",
+      "year": 2015,
+      "region": "Bordeaux",
+      "variety": "Merlot",
+      "rating": 9.3,
+      "similar_wines": [4, 5],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-1.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Brunello di Montalcino",
+      "year": 2018,
+      "region": "Tuscany",
+      "variety": "Sangiovese",
+      "rating": 9.4,
+      "similar_wines": [8, 9],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-2.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Verdicchio",
+      "year": 2017,
+      "region": "Lazio",
+      "variety": "Chardonnay",
+      "rating": 8.9,
+      "similar_wines": [7, 9],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-10.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Barolo Ruffino",
+      "year": 2016,
+      "region": "Piedmont",
+      "variety": "Sauvignon Blanc",
+      "rating": 9.2,
+      "similar_wines": [7, 8],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-7.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Chateau Mouton-Rothschild",
+      "year": 2015,
+      "region": "Bordeaux",
+      "variety": "Cabernet Sauvignon",
+      "rating": 9.6,
+      "similar_wines": [11, 12],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-12.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Chateau Margaux",
+      "year": 2014,
+      "region": "Bordeaux",
+      "variety": "Merlot-ish",
+      "rating": 9.8,
+      "similar_wines": [10, 12],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-6.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Chateau Lafite",
+      "year": 2013,
+      "region": "Bordeaux",
+      "variety": "Merlot",
+      "rating": 9.4,
+      "similar_wines": [10, 11],
+      "src": "https://generatorfun.com/code/uploads/Random-Wine-image-15.jpg"
+    }
+  ]
+}
