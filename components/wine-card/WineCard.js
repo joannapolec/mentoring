@@ -4,20 +4,25 @@ class WineCard extends HTMLElement {
   constructor() {
     super();
 
-    this._card = {
-      href: '#',
-      imgSrc: 'https://generatorfun.com/code/uploads/Random-Wine-image-1.jpg',
-      title: 'Random Title',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    };
+    // this._card = {
+    //   href: '#',
+    //   imgSrc: 'https://generatorfun.com/code/uploads/Random-Wine-image-1.jpg',
+    //   title: 'Random Title',
+    //   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    // };
   }
 
   connectedCallback() {
+    const isRow = JSON.parse(this.getAttribute('data-row'));
+
     const shadow = this.attachShadow({ mode: 'closed' });
     shadow.adoptedStyleSheets = [css];
 
     const card = document.createElement('div');
     card.classList.add('card');
+    if (isRow) {
+      card.classList.add('row');
+    }
 
     const img = document.createElement('img');
     img.classList.add('card__image');
@@ -25,6 +30,9 @@ class WineCard extends HTMLElement {
 
     const content = document.createElement('div');
     content.classList.add('card__content');
+    if (isRow) {
+      content.classList.add('row');
+    }
 
     const h3 = document.createElement('h3');
     h3.classList.add('card__title');
