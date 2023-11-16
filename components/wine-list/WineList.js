@@ -13,7 +13,7 @@ class WineList extends HTMLElement {
   }
 
   connectedCallback() {
-    const shadow = this.attachShadow({ mode: 'open' });
+    const shadow = this.attachShadow({ mode: 'closed' });
     shadow.adoptedStyleSheets = [css];
 
     const list = document.createElement('div');
