@@ -1,6 +1,6 @@
 // Without running the script please mark which one of these console logs will return a string and which one will cause the program to fail. Explain why.
 
-console.log(x()); // ANSWER:
+console.log(x()); // this one will return the string because x is defined and y is not
 
 console.log(y()); // ANSWER:
 

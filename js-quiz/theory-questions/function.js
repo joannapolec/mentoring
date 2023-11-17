@@ -6,4 +6,4 @@ const x = () => {};
 
 const y = function () {};
 
-// ?
+// first one is fat arrow short version of the anonymous function (second one)
