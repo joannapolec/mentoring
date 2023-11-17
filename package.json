@@ -2,13 +2,15 @@
   "name": "mentoring",
   "version": "1.0.0",
   "description": "mentoring project",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "live-server"
+    "start": "live-server",
+    "test": "mocha \"**/*.spec.js\""
   },
   "author": "Joanna Polec",
   "license": "ISC",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "mocha": "^10.2.0"
   }
 }
