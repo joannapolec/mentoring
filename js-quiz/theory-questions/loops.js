@@ -7,3 +7,7 @@ Write all loops that you have familiarized yourself with so that each loop produ
 "Hi, my name is Joanna and this is a 5 iteration."
 "Hi, my name is Joanna and this is a 6 iteration."
  */
+
+for (let number = 1; number < 7; number++) {
+    console.log('Hi, my name is Joanna and this is a ' + number + ' iteration')
+    }
