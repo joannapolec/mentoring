@@ -10,4 +10,13 @@ Write all loops that you have familiarized yourself with so that each loop produ
 
 for (let number = 1; number < 7; number++) {
     console.log('Hi, my name is Joanna and this is a ' + number + ' iteration')
-    }
+    };
+
+console.log('----');
+
+    let numbera = 1;
+    while(numbera < 7) {
+        console.log('Hi, my name is Joanna and this is a ' + numbera + ' iteration');
+        numbera++
+    };
+
