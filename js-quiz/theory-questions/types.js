@@ -10,7 +10,7 @@ const x = 1;
 
 // ?
 
-// ANSWER:
+// ANSWER: var and let are re-declarable variables (let is improved version of var) and const can't be re-declared.
 
 // Which of the following variables are primitives and which of them are referenced by their addresses in memory? Write variable names in the corresponding arrays
 
@@ -27,8 +27,8 @@ const g = {
 
 /* ANSWER
  *
- * Primitives: []
+ * Primitives: [a, b,c,f]
  *
- * Non-primitives: []
+ * Non-primitives: [d, e, g]
  *
  */
