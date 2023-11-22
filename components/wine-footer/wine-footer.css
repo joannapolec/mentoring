@@ -6,15 +6,48 @@ body {
     width: 100%;
     position: absolute;
     left: 0;
-    padding: 1vh 0.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #f5ebe0;
-    margin-top: 15px
+    margin-top: 15px;
+    font-family: Montserrat;
+    box-sizing: border-box;
+
   }
   
-  .footer-body-p {
-    font-family: 'Montserrat';
-    font-size: 0.8em
+  .footer-copyright {
+    font-size: 0.8em;
+    padding: 1.6vh;
+    background-color: rgb(213, 189, 175);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+
   }
+
+  .footer-content {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-content-info, .footer-content-links {
+    width: 50%;
+    height: 100%;
+  }
+
+  .footer-content-info h3 {
+  margin: 1em
+  }
+
+  .footer-content-info p {
+   font-size: 0.8em;
+   padding: 1.5em;
+   padding-top: 0;
+   text-align: justify;
+    }
+
+    .footer-content-links {
+      
+    }
