@@ -1,0 +1,19 @@
+body {
+    font-size: 12px;
+}
+
+.footer-body {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5ebe0
+  }
+  
+  .footer-body-p {
+    font-family: 'Montserrat';
+    font-size: 0.8em
+  }
