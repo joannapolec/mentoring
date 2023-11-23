@@ -5,14 +5,24 @@ class wineFooter extends HTMLElement {
     super();
 
     this._winefooter = {
-    text: '© Lorem ipsum dolor sit amet 2023.',
-    h3: 'Footer Content',
-    p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      text: '© Lorem ipsum dolor sit amet 2023.',
+      firstHeading: 'First heading',
+      secondHeading: 'Footer Content',
+      p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      linkList: [
+        {
+          href: 'google.com',
+          text: 'Google',
+        },
+        {
+          href: 'facebook.com',
+          text: 'Facebook',
+        },
+      ],
     };
   }
 
   connectedCallback() {
-
     const shadow = this.attachShadow({ mode: 'closed' });
     shadow.adoptedStyleSheets = [css];
 
@@ -20,33 +30,55 @@ class wineFooter extends HTMLElement {
     footerBody.classList.add('footer-body');
 
     const content = document.createElement('div');
-   content.classList.add('footer-content');
+    content.classList.add('footer-content');
 
-   const contentLeft = document.createElement('div');
-   contentLeft.classList.add('footer-content-info');
+    const contentLeft = document.createElement('div');
+    contentLeft.classList.add('footer-content-info');
 
-   const h3 = document.createElement('h3');
-   h3.classList.add('h3');
-   h3.textContent = this._winefooter.h3;
+    const firstHeading = document.createElement('h3');
+    firstHeading.classList.add('h3');
 
-   const p = document.createElement('p');
-   p.classList.add('p');
-   p.textContent = this._winefooter.p; 
-   
-   const contentRight = document.createElement('div');
-   contentRight.classList.add('footer-content-links');
+    const secondHeading = firstHeading.cloneNode();
 
- //  const links = document.createElement('ul');
-   //links.classList.add('');
+    firstHeading.textContent = this._winefooter.firstHeading;
+    secondHeading.textContent = this._winefooter.secondHeading;
+
+    const p = document.createElement('p');
+    p.classList.add('p');
+    p.textContent = this._winefooter.p;
+
+    const contentRight = document.createElement('div');
+    contentRight.classList.add('footer-content-links');
+
+    const links = document.createElement('ul');
+    // links.classList.add('links');
+
+    links.innerHTML = `<li>
+      <a href="google.com">Google</a>
+    </li>
+    <li>
+      <a href="facebook.com">Facebook</a>
+    </li>`;
+
+    // this._winefooter.linkList.forEach((link) => {
+    //   const li = document.createElement('li');
+    //   const a = document.createElement('a');
+    //   a.href = link.href;
+    //   a.textContent = link.text;
+    //   li.appendChild(a);
+    //   links.appendChild(li);
+    // });
 
     const copyright = document.createElement('div');
     copyright.classList.add('footer-copyright');
     copyright.textContent = this._winefooter.text;
-    
+
     footerBody.appendChild(content);
     content.appendChild(contentLeft);
-    contentLeft.appendChild(h3);
+    contentLeft.appendChild(firstHeading);
     contentLeft.appendChild(p);
+
+    contentRight.appendChild(secondHeading);
 
     content.appendChild(contentRight);
 
