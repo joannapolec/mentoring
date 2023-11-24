@@ -1,0 +1,12 @@
+<template>
+  <link rel="stylesheet" href="/common.css" />
+  <div class="wine-test">
+    <span>This is just a test component</span>
+    <hr />
+    <slot name="content">This is default content.</slot>
+    <br /><br />
+    <slot name="cards">
+      <wine-list />
+    </slot>
+  </div>
+</template>
