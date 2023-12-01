@@ -8,7 +8,6 @@
   background: #EDEDE9;
   border-radius: 10px;
   overflow: hidden;
-  height: 320px;
 }
 
 .card.row {
@@ -60,5 +59,4 @@
 
 .card__link:hover {
   background: #E3D5CA;
-  color: #fff;
 }
