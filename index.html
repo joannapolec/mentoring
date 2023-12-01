@@ -11,23 +11,25 @@
     />
     <title>Web Components</title>
     <style>
+      body {
+        font-family: montserrat;
+      }
       * {
         box-sizing: border-box;
-      }
+      }       
+      h1 {
+          text-align: center;
+        }
     </style>
   </head>
   <body>
     <div>
-      <h1>SINGLE CARD</h1>
-      <wine-card />
+      <h1> Popular wines</h1>
+      <wine-list />
     </div>
-    <hr />
+
     <div>
-      <h1>SINGLE CARD ROW</h1>
-      <wine-card data-row="true" />
-    </div>
-    <div>
-      <h1>CARD LIST</h1>
+      <h1> Recently viewed</h1>
       <wine-list />
     </div>
     <wine-footer></wine-footer>
