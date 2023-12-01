@@ -51,14 +51,17 @@ class wineFooter extends HTMLElement {
     contentRight.classList.add('footer-content-links');
 
     const links = document.createElement('ul');
-    // links.classList.add('links');
+    links.classList.add('ul');
 
     links.innerHTML = `<li>
-      <a href="google.com">Google</a>
+      <a href="link">Link 1</a>
     </li>
     <li>
-      <a href="facebook.com">Facebook</a>
-    </li>`;
+      <a href="link">Link 2</a>
+    </li>
+    <li>
+    <a href="link">Link 3</a>
+  </li>`;
 
     // this._winefooter.linkList.forEach((link) => {
     //   const li = document.createElement('li');
@@ -78,9 +81,11 @@ class wineFooter extends HTMLElement {
     contentLeft.appendChild(firstHeading);
     contentLeft.appendChild(p);
 
-    contentRight.appendChild(secondHeading);
 
     content.appendChild(contentRight);
+    contentRight.appendChild(secondHeading);
+    contentRight.appendChild(links);
+
 
     footerBody.appendChild(copyright);
 

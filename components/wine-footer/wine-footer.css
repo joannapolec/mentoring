@@ -2,6 +2,10 @@ body {
     font-size: 12px;
 }
 
+a {
+  color: black
+}
+
 .footer-body {
     width: 100%;
     position: absolute;
@@ -27,13 +31,12 @@ body {
   }
 
   .footer-content {
-    height: 20vh;
     display: flex;
     justify-content: space-between;
   }
 
   .footer-content-info, .footer-content-links {
-    width: 50%;
+    width: 37%;
     height: 100%;
   }
 
@@ -48,6 +51,11 @@ body {
    text-align: justify;
     }
 
-    .footer-content-links {
-      
+    .footer-content-links ul{
+    list-style-type: none;
+    padding-left: 15px
+    }
+
+    .footer-content-links li a{
+    text-decoration: none;  
     }
