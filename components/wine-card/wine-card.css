@@ -51,7 +51,7 @@
   align-self: flex-end;
   text-decoration: none;
   color: #000;
-  background: #e0ae93;
+  background: #D5BDAF;
   border-radius: 2rem;
   padding: 0.75rem 1rem;
   transition: all 0.2s ease-in-out;
@@ -59,6 +59,6 @@
 }
 
 .card__link:hover {
-  background: #bb6d47;
+  background: #E3D5CA;
   color: #fff;
 }
