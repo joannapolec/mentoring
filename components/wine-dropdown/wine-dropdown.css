@@ -1,0 +1,21 @@
+.dropdown {
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background-color: #F5EBE0;
+    width: 200px;
+}
+
+.dropdown .show {
+    display: block
+}
+.dropdown-menu ul {
+    padding-left: 15px;
+}
+.dropdown-menu li {
+    list-style: none;
+    margin: 5px 0
+}

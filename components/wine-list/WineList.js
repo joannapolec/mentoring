@@ -16,16 +16,17 @@ class WineList extends HTMLElement {
     const shadow = this.attachShadow({ mode: 'closed' });
     shadow.adoptedStyleSheets = [css];
 
-    const list = document.createElement('div');
-    list.classList.add('list');
 
-    this._list.forEach((card) => {
+    const carousel = document.createElement('div');
+    carousel.classList.add('list');
+
+    carousel.dataSource = this._list.forEach((card) => {
       const wineCard = document.createElement('wine-card');
       wineCard._card = card;
-      list.appendChild(wineCard);
+      carousel.appendChild(wineCard);
     });
 
-    shadow.appendChild(list);
+    shadow.appendChild(carousel);
   }
 }
 
