@@ -15,18 +15,16 @@ export const dropdownTemplate = () => {
         <slot name="dropdown-list"></slot>
       </div>
     </div>
-  </template>`
+  </template>`;
 
   const div = document.createElement('div');
   div.innerHTML = template;
 
-  console.log(typeof div.innerHTML)
-
-  return div.innerHTML;
-}
+  return div.querySelector('template').content;
+};
 
 const dropdownItemTemplate = `<template id="dropdown-item">
   <div class="dropdown-item">
     <slot name="content"></slot>
   </div>
-</template>`
+</template>`;
