@@ -19,3 +19,8 @@
     list-style: none;
     margin: 5px 0
 }
+
+.dropdown .button {
+    display: flex;
+    align-items: center;
+}

@@ -53,3 +53,7 @@ align-items: center;
   color: #D5BDAF;
   display: flex;
 }
+
+inconify-icon {
+  display: inherit;
+}

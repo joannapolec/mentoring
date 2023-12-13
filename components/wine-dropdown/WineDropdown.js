@@ -42,7 +42,7 @@ class WineDropdown extends HTMLElement {
 
         const icon = document.createElement('span');
         icon.classList.add('icon');
-        icon.innerHTML = '&#9660;';
+        icon.innerHTML = '<iconify-icon icon="ph:list-bold"></iconify-icon>';
 
         button.appendChild(text);
         button.appendChild(icon);

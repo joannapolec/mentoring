@@ -4,7 +4,7 @@ class WineList extends HTMLElement {
   constructor() {
     super();
 
-    this._list = [...Array(5).keys()].map((index) => ({
+    this._list = [...Array(4).keys()].map((index) => ({
       href: '#',
       imgSrc: 'https://generatorfun.com/code/uploads/Random-Wine-image-1.jpg',
       title: 'Random Title ' + (index + 1),
