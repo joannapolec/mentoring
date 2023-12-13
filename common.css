@@ -1,0 +1,55 @@
+body {
+    font-family: montserrat;
+    margin: 0;
+    box-sizing: border-box;
+  }
+      
+  h1 {
+      text-align: center;
+    }
+
+   .wrapper {
+    width: 80%;
+    margin: 0 auto
+   } 
+
+   .navbar {
+    position: fixed;
+width: 100%;
+height: 55px;
+top: 0;
+box-sizing: border-box;
+padding: 0 10px;
+background-color: #D5BDAF;
+display: flex;
+align-items: center;
+   }
+
+.page-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+#wine-search {
+  border: solid 1px #E3D5CA;
+    padding: 5px;
+    border-radius: 10px;
+    width: 250px
+}
+
+.page-top fieldset {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wine-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #D5BDAF;
+  display: flex;
+}
