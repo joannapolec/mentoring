@@ -1,21 +1,25 @@
-import { pathToRegexp } from 'path-to-regexp';
+import { Router } from '/node_modules/@vaadin/router/dist/vaadin-router.min.js';
 
-const routes = [
+const ROUTES = [
   {
-    path: pathToRegexp('/'),
+    path: '/',
     component: 'wine-home',
   },
   {
-    path: pathToRegexp('/category'),
+    path: '/category',
     component: 'wine-category',
   },
   {
-    path: pathToRegexp('/product/:id'),
+    path: '/product/:id',
     component: 'wine-product',
   },
   {
-    path: pathToRegexp('/admin'),
+    path: '/admin',
     component: 'wine-admin',
+  },
+  {
+    path: '(.*)',
+    component: 'wine-not-found',
   },
 ];
 
@@ -24,13 +28,15 @@ class WineRouter extends HTMLElement {
     super();
   }
 
-  navigate(url, state = null) {
-    window.history.pushState(state, null, url);
-  }
-
   connectedCallback() {
-    this.navigate(window.location.pathname);
     const shadow = this.attachShadow({ mode: 'closed' });
+
+    const routerOutlet = document.createElement('div');
+
+    const router = new Router(routerOutlet);
+    router.setRoutes(ROUTES);
+
+    shadow.appendChild(routerOutlet);
   }
 }
 

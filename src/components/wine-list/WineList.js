@@ -16,7 +16,6 @@ class WineList extends HTMLElement {
     const shadow = this.attachShadow({ mode: 'closed' });
     shadow.adoptedStyleSheets = [css];
 
-
     const carousel = document.createElement('div');
     carousel.classList.add('list');
 

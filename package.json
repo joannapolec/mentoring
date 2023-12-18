@@ -2,14 +2,13 @@
   "name": "mentoring",
   "version": "1.0.0",
   "description": "mentoring project",
-  "main": "index.js",
   "scripts": {
     "start": "live-server"
   },
   "author": "Joanna Polec",
   "license": "ISC",
   "dependencies": {
-    "path-to-regexp": "^6.2.1"
+    "@vaadin/router": "^1.7.5"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
