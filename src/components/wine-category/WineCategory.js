@@ -16,7 +16,6 @@ class WineCategory extends HTMLElement {
     const shadow = this.attachShadow({ mode: 'closed' });
     shadow.adoptedStyleSheets = [css];
 
-
     const carousel = document.createElement('div');
     carousel.classList.add('list');
 
@@ -30,4 +29,4 @@ class WineCategory extends HTMLElement {
   }
 }
 
-customElements.define('wine-category', WineCategory);
+customElements.define('wine-category-content', WineCategory);

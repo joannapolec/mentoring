@@ -1,6 +1,6 @@
 import css from './wine-footer.css' assert { type: 'css' };
 
-class wineFooter extends HTMLElement {
+class WineFooter extends HTMLElement {
   constructor() {
     super();
 
@@ -81,11 +81,9 @@ class wineFooter extends HTMLElement {
     contentLeft.appendChild(firstHeading);
     contentLeft.appendChild(p);
 
-
     content.appendChild(contentRight);
     contentRight.appendChild(secondHeading);
     contentRight.appendChild(links);
-
 
     footerBody.appendChild(copyright);
 
@@ -93,4 +91,4 @@ class wineFooter extends HTMLElement {
   }
 }
 
-customElements.define('wine-footer', wineFooter);
+customElements.define('wine-footer', WineFooter);

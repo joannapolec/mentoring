@@ -9,28 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/common.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
     <title>Web Components</title>
   </head>
   <body>
-    <div class="navbar">
-    <wine-dropdown></wine-dropdown>
-    </div>
-    <wine-header></wine-header>
-   <div class="wrapper">
-    <div>
-      <h1> Popular wines</h1>
-      <wine-list ></wine-list>
-    </div>
-
-    <div>
-      <h1> Recently viewed</h1>
-      <wine-list ></wine-list>
-    </div>
-  </div>
-    <wine-footer></wine-footer>
-    <script src="./components/index.js" type="module"></script>
+    <!-- <wine-home></wine-home> -->
+    <wine-router></wine-router>
+    <script src="./src/components/index.js" type="module"></script>
+    <script src="./src/views/index.js" type="module"></script>
+    <script src="./src/router/WineRouter.js" type="module"></script>
   </body>
 </html>
